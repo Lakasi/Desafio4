@@ -1,0 +1,16 @@
+<h1 style="text-align: center;">PRODUCTOS</h1>
+<hr>
+{{#if products}}
+  {{#each productos}}
+    <h4>Title:</h4> {{this.title}}
+    <h4>Description:</h4> {{this.description}}
+    <h4>code:</h4> {{this.code}}
+    <h4>price:</h4> {{this.price}}
+    <h4>status:</h4> {{this.status}}
+    <h4>stock:</h4> {{this.stock}}
+    <h4>thumbnails:</h4> {{this.thumbnails}}
+  <hr>
+  {{/each}}
+{{else}}
+<p>no hay productos...</p>
+{{/if}}
